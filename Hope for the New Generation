@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope For The Next Generation | Mbale Rising</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+    
+    body { font-family: 'Inter', system_ui, sans-serif; }
+    .heading-font { font-family: 'Playfair Display', sans-serif; }
+    .hero-bg {
+      background-image: linear-gradient(rgba(10, 37, 64, 0.75), rgba(10, 37, 64, 0.85)), 
+                        url('https://picsum.photos/id/1015/2000/1200');
+      background-size: cover;
+      background-position: center;
+    }
+    .stat-number { font-size: 3rem; line-height: 1; }
+    .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card-hover:hover { transform: translateY(-12px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }
+  </style>
+</head>
+<body class="bg-[#F8F7F2] text-gray-800">
+
+  <!-- NAV -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold">HNG</div>
+        <div>
+          <span class="text-2xl font-bold heading-font tracking-tight text-[#0A2540]">Hope For The Next Generation</span>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#programs" class="hover:text-emerald-600 transition">Programs</a>
+        <a href="#impact" class="hover:text-emerald-600 transition">Impact</a>
+        <a href="#about" class="hover:text-emerald-600 transition">About</a>
+      </div>
+      <a href="#donate" 
+         class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-2xl transition shadow-lg shadow-orange-500/30">
+        DONATE NOW
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-bg h-screen flex items-center text-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h1 class="text-6xl md:text-7xl font-bold heading-font leading-tight mb-6">
+        Empowering Mbale's Children<br>
+        <span class="text-orange-400">Through Tag Rugby &amp; Sport for Development</span>
+      </h1>
+      <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10 text-white/90">
+        Restoring hope and unlocking potential through grassroots sports, life skills, education, and community sustainability.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#donate" 
+           class="bg-orange-500 hover:bg-orange-600 text-white text-xl font-semibold px-12 py-6 rounded-3xl transition text-center shadow-2xl shadow-orange-500/40">
+          DONATE TO TRANSFORM LIVES
+        </a>
+        <a href="#programs" 
+           class="border-2 border-white hover:bg-white hover:text-[#0A2540] text-white text-xl font-semibold px-10 py-6 rounded-3xl transition text-center">
+          EXPLORE PROGRAMS
+        </a>
+      </div>
+
+      <div class="mt-12 flex justify-center gap-8 text-sm">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-emerald-400"></i>
+          <span>#SportForDevelopment</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-emerald-400"></i>
+          <span>Tag Rugby • Life Skills • Education</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+      <i class="fa-solid fa-chevron-down text-4xl text-white/70"></i>
+    </div>
+  </header>
+
+  <!-- IMPACT STATS -->
+  <section id="impact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold heading-font text-[#0A2540]">Real Impact in Mbale</h2>
+        <p class="text-xl text-gray-600 mt-3">Children empowered through sport and education</p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="stat-number text-emerald-600 font-bold" data-count="650">0</div>
+          <p class="text-xl font-medium text-gray-700">Children &amp; Youth Reached</p>
+        </div>
+        <div class="text-center">
+          <div class="stat-number text-emerald-600 font-bold" data-count="450">0</div>
+          <p class="text-xl font-medium text-gray-700">Tag Rugby Athletes</p>
+        </div>
+        <div class="text-center">
+          <div class="stat-number text-emerald-600 font-bold" data-count="320">0</div>
+          <p class="text-xl font-medium text-gray-700">Girls Empowered</p>
+        </div>
+        <div class="text-center">
+          <div class="stat-number text-emerald-600 font-bold" data-count="65">0</div>
+          <p class="text-xl font-medium text-gray-700">Community Projects</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="py-20 bg-[#F8F7F2]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold heading-font text-[#0A2540]">Our Core Programs</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-3xl overflow-hidden card-hover shadow-xl">
+          <div class="h-56 bg-[url('https://picsum.photos/id/1015/600/400')] bg-cover"></div>
+          <div class="p-8">
+            <div class="text-emerald-600 mb-3"><i class="fa-solid fa-football text-3xl"></i></div>
+            <h3 class="text-2xl font-semibold mb-3">Tag Rugby &amp; Sports</h3>
+            <p class="text-gray-600">Using tag rugby and sport-for-development to build discipline, teamwork, confidence, and physical wellness.</p>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-3xl overflow-hidden card-hover shadow-xl">
+          <div class="h-56 bg-[url('https://picsum.photos/id/201/600/400')] bg-cover"></div>
+          <div class="p-8">
+            <div class="text-orange-500 mb-3"><i class="fa-solid fa-book text-3xl"></i></div>
+            <h3 class="text-2xl font-semibold mb-3">Education &amp; Life Skills</h3>
+            <p class="text-gray-600">Quality education support and life-skills training to break cycles of poverty.</p>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-3xl overflow-hidden card-hover shadow-xl">
+          <div class="h-56 bg-[url('https://picsum.photos/id/1005/600/400')] bg-cover"></div>
+          <div class="p-8">
+            <div class="text-purple-600 mb-3"><i class="fa-solid fa-users text-3xl"></i></div>
+            <h3 class="text-2xl font-semibold mb-3">Girls Empowerment</h3>
+            <p class="text-gray-600">Targeted programs using sport to challenge gender norms and empower girls.</p>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-3xl overflow-hidden card-hover shadow-xl">
+          <div class="h-56 bg-[url('https://picsum.photos/id/133/600/400')] bg-cover"></div>
+          <div class="p-8">
+            <div class="text-amber-600 mb-3"><i class="fa-solid fa-seedling text-3xl"></i></div>
+            <h3 class="text-2xl font-semibold mb-3">Sustainability &amp; Community</h3>
+            <p class="text-gray-600">Environmental awareness, family support, and long-term community development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATION APPEAL -->
+  <section id="donate" class="py-24 bg-gradient-to-br from-[#0A2540] to-emerald-900 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold heading-font mb-6">Your Support Changes Lives in Mbale</h2>
+      <p class="text-2xl text-white/80 mb-12">Fuel tag rugby, education, and hope for the next generation</p>
+      
+      <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-10 shadow-2xl">
+        <div class="flex justify-center gap-3 mb-8">
+          <button onclick="toggleDonationType(this)" class="donation-type active px-8 py-3 rounded-2xl font-semibold bg-white text-[#0A2540]" data-type="monthly">Monthly</button>
+          <button onclick="toggleDonationType(this)" class="donation-type px-8 py-3 rounded-2xl font-semibold" data-type="once">One-time</button>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
+          <button onclick="selectAmount(25)" class="amount-btn border border-white/30 hover:border-white py-6 rounded-2xl text-2xl font-semibold transition">$25</button>
+          <button onclick="selectAmount(50)" class="amount-btn border border-white/30 hover:border-white py-6 rounded-2xl text-2xl font-semibold transition">$50</button>
+          <button onclick="selectAmount(100)" class="amount-btn border-2 border-orange-400 py-6 rounded-2xl text-2xl font-semibold transition bg-white text-[#0A2540]">$100</button>
+          <button onclick="selectAmount(250)" class="amount-btn border border-white/30 hover:border-white py-6 rounded-2xl text-2xl font-semibold transition">$250</button>
+          <button onclick="customAmount()" class="amount-btn border border-white/30 hover:border-white py-6 rounded-2xl text-xl font-semibold transition">Custom</button>
+        </div>
+        
+        <button onclick="simulateDonate()" 
+                class="w-full bg-orange-500 hover:bg-orange-600 py-8 text-2xl font-bold rounded-3xl transition shadow-xl">
+          DONATE $<span id="selected-amount">100</span> NOW
+        </button>
+        
+        <p class="text-sm mt-6 text-white/70">Secure • Transparent • MTN • Airtel • International Cards</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSTAINABILITY -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-4xl font-bold heading-font mb-8">Sport for Development &amp; Sustainability</h2>
+          <p class="text-xl text-gray-600 mb-8">
+            We combine tag rugby with life skills, education, and environmental awareness to create resilient leaders and stronger communities.
+          </p>
+        </div>
+        <div class="rounded-3xl overflow-hidden">
+          <img src="https://picsum.photos/id/201/800/600" alt="Children playing tag rugby in Mbale" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold heading-font mb-12">Trusted by the Community</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white p-8 rounded-3xl shadow">
+          <i class="fa-solid fa-award text-5xl text-emerald-600 mb-6"></i>
+          <h4 class="font-semibold mb-2">Grassroots Focused</h4>
+          <p class="text-gray-600">Working directly with children in Mbale City</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow">
+          <i class="fa-solid fa-heart text-5xl text-emerald-600 mb-6"></i>
+          <h4 class="font-semibold mb-2">Girls &amp; Inclusion</h4>
+          <p class="text-gray-600">Empowering girls through sport and leadership</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow">
+          <i class="fa-solid fa-seedling text-5xl text-emerald-600 mb-6"></i>
+          <h4 class="font-semibold mb-2">SDGs Aligned</h4>
+          <p class="text-gray-600">Contributing to Quality Education, Gender Equality &amp; Climate Action</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="bg-gradient-to-r from-emerald-700 to-orange-600 py-20 text-white text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-5xl font-bold heading-font mb-6">Help Us Build the Next Generation</h2>
+      <p class="text-2xl mb-10">Every donation supports tag rugby, education, and hope in Mbale.</p>
+      <a href="#donate" class="inline-block bg-white text-[#0A2540] hover:bg-amber-100 text-2xl font-bold px-16 py-8 rounded-3xl transition">
+        DONATE TODAY
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0A2540] text-white/80 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-emerald-600 rounded-2xl flex items-center justify-center text-3xl font-bold">HNG</div>
+            <span class="text-2xl font-bold heading-font">HopeNxtGen</span>
+          </div>
+          <p class="text-sm">Empowering children in Mbale City through Tag Rugby and Sport for Development.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Programs</a></li>
+            <li><a href="#" class="hover:text-white">Impact Stories</a></li>
+            <li><a href="https://x.com/HopeNxtGen" target="_blank" class="hover:text-white">Follow on X</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-white mb-4">Stay Connected</h4>
+          <div class="flex">
+            <input type="email" placeholder="Your email" class="bg-white/10 border border-white/30 rounded-l-2xl px-5 py-4 text-sm flex-1 focus:outline-none">
+            <button class="bg-orange-500 hover:bg-orange-600 px-8 rounded-r-2xl font-medium">Join</button>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-white mb-4">Contact</h4>
+          <p class="text-sm">Mbale City, Uganda</p>
+          <div class="flex gap-4 mt-6">
+            <a href="https://x.com/HopeNxtGen" target="_blank"><i class="fa-brands fa-x-twitter text-2xl hover:text-white"></i></a>
+            <i class="fa-brands fa-instagram text-2xl hover:text-white cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/10 mt-16 pt-8 text-center text-xs">
+        © 2026 Hope For The Next Generation • Mbale City, Uganda
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Counter Animation
+    function animateCounters() {
+      document.querySelectorAll('[data-count]').forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-count'));
+        let count = 0;
+        const increment = Math.ceil(target / 60);
+        const timer = setInterval(() => {
+          count += increment;
+          if (count >= target) {
+            count = target;
+            clearInterval(timer);
+          }
+          counter.textContent = count.toLocaleString() + '+';
+        }, 30);
+      });
+    }
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) animateCounters();
+    });
+
+    // Donation Script
+    let currentAmount = 100;
+    let isMonthly = true;
+
+    function toggleDonationType(el) {
+      document.querySelectorAll('.donation-type').forEach(btn => btn.classList.remove('active', 'bg-white', 'text-[#0A2540]'));
+      el.classList.add('active', 'bg-white', 'text-[#0A2540]');
+      isMonthly = el.getAttribute('data-type') === 'monthly';
+    }
+
+    function selectAmount(amount) {
+      currentAmount = amount;
+      document.getElementById('selected-amount').textContent = amount;
+    }
+
+    function customAmount() {
+      const custom = prompt("Enter custom amount in USD:", "150");
+      if (custom && !isNaN(custom)) {
+        currentAmount = parseInt(custom);
+        document.getElementById('selected-amount').textContent = currentAmount;
+      }
+    }
+
+    function simulateDonate() {
+      alert(`Thank you! Your $${currentAmount} ${isMonthly ? 'monthly' : 'one-time'} donation to Hope For The Next Generation will directly support children in Mbale through tag rugby and education. ❤️`);
+    }
+
+    window.onload = () => {
+      document.querySelectorAll('.amount-btn')[2].classList.add('border-2', 'border-orange-400', 'bg-white', 'text-[#0A2540]');
+    };
+  </script>
+</body>
+</html>
